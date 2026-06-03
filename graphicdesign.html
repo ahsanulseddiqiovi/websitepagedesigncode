@@ -1,0 +1,194 @@
+<section class="service-tabs">
+<style>
+.service-tabs{
+  padding:80px 20px;
+  background:radial-gradient(circle at top,#020617,#0f172a);
+  font-family:system-ui,sans-serif;
+  color:#fff
+}
+.tabs-title{
+  text-align:center;
+  font-size:38px;
+  font-weight:800;
+  margin-bottom:40px;
+  background:linear-gradient(90deg,#38bdf8,#a855f7,#22c55e);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent
+}
+.tabs-nav{
+  display:flex;
+  justify-content:center;
+  gap:14px;
+  margin-bottom:50px;
+  flex-wrap:wrap
+}
+.tab-btn{
+  padding:12px 26px;
+  border-radius:30px;
+  border:1px solid rgba(255,255,255,.15);
+  background:rgba(255,255,255,.05);
+  color:#fff;
+  font-weight:600;
+  cursor:pointer;
+  transition:.4s;
+  backdrop-filter:blur(10px)
+}
+.tab-btn.active,.tab-btn:hover{
+  background:linear-gradient(135deg,#38bdf8,#a855f7);
+  box-shadow:0 0 25px rgba(168,85,247,.7)
+}
+.tab-content{display:none;animation:fade .6s ease}
+.tab-content.active{display:block}
+@keyframes fade{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}
+
+.services-grid{
+  max-width:1300px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+  gap:24px
+}
+.service-card{
+  position:relative;
+  padding:30px 22px;
+  border-radius:20px;
+  backdrop-filter:blur(14px);
+  background:linear-gradient(135deg,rgba(255,255,255,.08),rgba(255,255,255,.02));
+  border:1px solid rgba(255,255,255,.12);
+  overflow:hidden;
+  transition:.5s
+}
+.service-card::before{
+  content:"";
+  position:absolute;
+  inset:-2px;
+  background:linear-gradient(120deg,#38bdf8,#a855f7,#22c55e,#38bdf8);
+  background-size:300% 300%;
+  animation:move 6s linear infinite;
+  opacity:.25
+}
+.service-card::after{
+  content:"";
+  position:absolute;
+  inset:1px;
+  background:rgba(2,6,23,.8);
+  border-radius:18px
+}
+.service-card:hover{
+  transform:translateY(-10px) scale(1.03);
+  box-shadow:0 25px 60px rgba(56,189,248,.35)
+}
+@keyframes move{0%{background-position:0% 50%}100%{background-position:100% 50%}}
+.card-inner{position:relative;z-index:1;text-align:center}
+.num{font-size:14px;opacity:.6;margin-bottom:8px;font-weight:700}
+.icon{
+  width:56px;height:56px;margin:0 auto 16px;
+  border-radius:50%;display:grid;place-items:center;
+  font-size:26px;
+  background:linear-gradient(135deg,#38bdf8,#a855f7);
+  transition:.6s
+}
+.service-card:hover .icon{
+  transform:rotate(360deg) scale(1.15);
+  box-shadow:0 0 30px rgba(168,85,247,.9)
+}
+.text{font-size:17px;font-weight:600}
+
+@media(max-width:600px){
+  .services-grid{grid-template-columns:repeat(2,1fr)}
+  .tabs-title{font-size:28px}
+}
+</style>
+
+
+
+<div class="tabs-nav">
+  <button class="tab-btn active" data-tab="graphic">Graphic</button>
+  <button class="tab-btn" data-tab="web">Web</button>
+  <button class="tab-btn" data-tab="motion">Motion</button>
+</div>
+
+<!-- GRAPHIC : 20 -->
+<div class="tab-content active" id="graphic">
+<div class="services-grid">
+<div class="service-card"><div class="card-inner"><div class="num">01</div><div class="icon">🎨</div><div class="text">Logo Design</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">02</div><div class="icon">🧠</div><div class="text">Brand Identity</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">03</div><div class="icon">📱</div><div class="text">Social Media Design</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">04</div><div class="icon">🖼️</div><div class="text">Banner Design</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">05</div><div class="icon">📄</div><div class="text">Poster Design</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">06</div><div class="icon">📢</div><div class="text">Flyer Design</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">07</div><div class="icon">💼</div><div class="text">Business Card</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">08</div><div class="icon">📘</div><div class="text">Brochure Design</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">09</div><div class="icon">📦</div><div class="text">Packaging Design</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">10</div><div class="icon">📰</div><div class="text">Magazine Layout</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">11</div><div class="icon">🧾</div><div class="text">Invoice Design</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">12</div><div class="icon">🪧</div><div class="text">Signage Design</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">13</div><div class="icon">📊</div><div class="text">Infographic</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">14</div><div class="icon">🧑‍💼</div><div class="text">Profile Branding</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">15</div><div class="icon">📷</div><div class="text">Photo Editing</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">16</div><div class="icon">🎯</div><div class="text">Ad Creative</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">17</div><div class="icon">📐</div><div class="text">Print Design</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">18</div><div class="icon">🖌️</div><div class="text">Illustration</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">19</div><div class="icon">📌</div><div class="text">Thumbnail Design</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">20</div><div class="icon">🎁</div><div class="text">Merch Design</div></div></div>
+</div>
+</div>
+
+<!-- WEB : 18 -->
+<div class="tab-content" id="web">
+<div class="services-grid">
+<div class="service-card"><div class="card-inner"><div class="num">01</div><div class="icon">💻</div><div class="text">Website Design</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">02</div><div class="icon">⚙️</div><div class="text">Web Development</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">03</div><div class="icon">🛒</div><div class="text">E-commerce</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">04</div><div class="icon">📱</div><div class="text">Responsive Design</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">05</div><div class="icon">⚡</div><div class="text">Speed Optimization</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">06</div><div class="icon">🔒</div><div class="text">Security Setup</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">07</div><div class="icon">🧩</div><div class="text">Custom Features</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">08</div><div class="icon">📄</div><div class="text">Landing Page</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">09</div><div class="icon">🔄</div><div class="text">Website Redesign</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">10</div><div class="icon">🧠</div><div class="text">UX Strategy</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">11</div><div class="icon">📦</div><div class="text">CMS Setup</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">12</div><div class="icon">🌐</div><div class="text">Domain & Hosting</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">13</div><div class="icon">📊</div><div class="text">Analytics Setup</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">14</div><div class="icon">🔍</div><div class="text">SEO Optimization</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">15</div><div class="icon">🤖</div><div class="text">API Integration</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">16</div><div class="icon">🛠️</div><div class="text">Maintenance</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">17</div><div class="icon">🧪</div><div class="text">Testing</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">18</div><div class="icon">🚀</div><div class="text">Deployment</div></div></div>
+</div>
+</div>
+
+<!-- MOTION : 15 -->
+<div class="tab-content" id="motion">
+<div class="services-grid">
+<div class="service-card"><div class="card-inner"><div class="num">01</div><div class="icon">🎬</div><div class="text">Motion Graphics</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">02</div><div class="icon">✨</div><div class="text">Logo Animation</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">03</div><div class="icon">📽️</div><div class="text">Promo Video</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">04</div><div class="icon">📱</div><div class="text">Social Media Motion</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">05</div><div class="icon">🎵</div><div class="text">Audio Sync</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">06</div><div class="icon">🧠</div><div class="text">Explainer Video</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">07</div><div class="icon">🎞️</div><div class="text">Intro Outro</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">08</div><div class="icon">📊</div><div class="text">Animated Charts</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">09</div><div class="icon">🌀</div><div class="text">Text Animation</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">10</div><div class="icon">💡</div><div class="text">Concept Animation</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">11</div><div class="icon">📢</div><div class="text">Ad Motion</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">12</div><div class="icon">📺</div><div class="text">YouTube Motion</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">13</div><div class="icon">🎮</div><div class="text">Game Motion</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">14</div><div class="icon">🖥️</div><div class="text">UI Animation</div></div></div>
+<div class="service-card"><div class="card-inner"><div class="num">15</div><div class="icon">🚀</div><div class="text">Launch Video</div></div></div>
+</div>
+</div>
+
+<script>
+const tabs=document.querySelectorAll('.tab-btn');
+const contents=document.querySelectorAll('.tab-content');
+tabs.forEach(btn=>{
+  btn.onclick=()=>{
+    tabs.forEach(b=>b.classList.remove('active'));
+    contents.forEach(c=>c.classList.remove('active'));
+    btn.classList.add('active');
+    document.getElementById(btn.dataset.tab).classList.add('active');
+  }
+});
+</script>
+</section>

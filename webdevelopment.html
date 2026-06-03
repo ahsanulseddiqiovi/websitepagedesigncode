@@ -1,0 +1,245 @@
+<section class="ovi-web-services">
+  <div class="ovi-container">
+    <h2 class="ovi-title">
+      Web Development <span>Services</span>
+    </h2>
+    <p class="ovi-subtitle">
+      Scalable, modern, and performance-focused web solutions.
+    </p>
+
+    <div class="ovi-services-grid">
+
+      <div class="ovi-service-card g1">
+        <div class="ovi-icon">💻</div>
+        <h3>Custom Website Development</h3>
+        <p>Tailor-made websites built for speed and scalability.</p>
+      </div>
+
+      <div class="ovi-service-card g2">
+        <div class="ovi-icon">🎨</div>
+        <h3>Frontend Development</h3>
+        <p>Clean UI with smooth animations and interactions.</p>
+      </div>
+
+      <div class="ovi-service-card g3">
+        <div class="ovi-icon">🧠</div>
+        <h3>Backend Development</h3>
+        <p>Secure, optimized, and scalable backend systems.</p>
+      </div>
+
+      <div class="ovi-service-card g4">
+        <div class="ovi-icon">⚙️</div>
+        <h3>Full Stack Development</h3>
+        <p>Complete solutions from UI to database.</p>
+      </div>
+
+      <div class="ovi-service-card g5">
+        <div class="ovi-icon">📱</div>
+        <h3>Responsive Design</h3>
+        <p>Perfect layouts for all screen sizes.</p>
+      </div>
+
+      <div class="ovi-service-card g6">
+        <div class="ovi-icon">🚀</div>
+        <h3>SaaS Applications</h3>
+        <p>Modern SaaS platforms with premium UX.</p>
+      </div>
+
+      <div class="ovi-service-card g7">
+        <div class="ovi-icon">🎯</div>
+        <h3>Landing Pages</h3>
+        <p>High-conversion marketing pages.</p>
+      </div>
+
+      <div class="ovi-service-card g8">
+        <div class="ovi-icon">🔌</div>
+        <h3>API Integration</h3>
+        <p>Payment, third-party, and custom APIs.</p>
+      </div>
+      <div class="ovi-service-card g9">
+  <div class="ovi-icon">🛒</div>
+  <h3>E-commerce Development</h3>
+  <p>Secure and scalable online stores with smooth checkout flow.</p>
+</div>
+
+<div class="ovi-service-card g10">
+  <div class="ovi-icon">☁️</div>
+  <h3>Cloud Integration</h3>
+  <p>Deploy and scale apps using modern cloud solutions.</p>
+</div>
+
+<div class="ovi-service-card g11">
+  <div class="ovi-icon">🔐</div>
+  <h3>Web Security</h3>
+  <p>Protection against vulnerabilities, attacks, and data leaks.</p>
+</div>
+
+<div class="ovi-service-card g12">
+  <div class="ovi-icon">📊</div>
+  <h3>Admin Dashboards</h3>
+  <p>Custom analytics and admin panels with clean UI.</p>
+</div>
+
+<div class="ovi-service-card g13">
+  <div class="ovi-icon">🔄</div>
+  <h3>Website Redesign</h3>
+  <p>Modern redesigns that improve UX and performance.</p>
+</div>
+
+<div class="ovi-service-card g14">
+  <div class="ovi-icon">⚡</div>
+  <h3>Page Speed Optimization</h3>
+  <p>Core Web Vitals optimization for faster load times.</p>
+</div>
+
+<div class="ovi-service-card g15">
+  <div class="ovi-icon">🧪</div>
+  <h3>Testing & Debugging</h3>
+  <p>Bug fixing, testing, and performance validation.</p>
+</div>
+
+<div class="ovi-service-card g16">
+  <div class="ovi-icon">📦</div>
+  <h3>Website Migration</h3>
+  <p>Safe migration between hosting, CMS, or frameworks.</p>
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+<style>
+.ovi-web-services{
+  padding:100px 20px;
+  background:linear-gradient(135deg,#0f0c29,#302b63,#24243e);
+  font-family:system-ui,sans-serif;
+}
+
+.ovi-container{
+  max-width:1200px;
+  margin:auto;
+  text-align:center;
+}
+
+.ovi-title{
+  font-size:46px;
+  color:#fff;
+  font-weight:700;
+}
+
+.ovi-title span{
+  background:linear-gradient(135deg,#00f2fe,#4facfe);
+  background-clip:text;
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+
+.ovi-subtitle{
+  color:#d0d6e0;
+  max-width:650px;
+  margin:15px auto 60px;
+}
+
+.ovi-services-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+  gap:30px;
+}
+
+.ovi-service-card{
+  padding:35px 30px;
+  border-radius:22px;
+  background:rgba(255,255,255,0.08);
+  backdrop-filter:blur(18px);
+  border:1px solid rgba(255,255,255,0.15);
+  transition:.45s ease;
+}
+
+.ovi-service-card:hover{
+  transform:translateY(-12px);
+  box-shadow:0 30px 70px rgba(0,0,0,.4);
+}
+
+/* ICON */
+.ovi-icon{
+  width:62px;
+  height:62px;
+  margin:0 auto 20px;
+  border-radius:16px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:26px;
+  background-size:300% 300%;
+  animation:gradientMove 6s ease infinite;
+  transition:.5s ease;
+}
+
+.ovi-service-card:hover .ovi-icon{
+  transform:rotate(15deg) scale(1.1);
+  box-shadow:0 0 25px rgba(255,255,255,.6);
+}
+
+/* Card Gradients */
+.g1 .ovi-icon{background:linear-gradient(135deg,#00f2fe,#4facfe);}
+.g2 .ovi-icon{background:linear-gradient(135deg,#f7971e,#ffd200);}
+.g3 .ovi-icon{background:linear-gradient(135deg,#a18cd1,#fbc2eb);}
+.g4 .ovi-icon{background:linear-gradient(135deg,#43e97b,#38f9d7);}
+.g5 .ovi-icon{background:linear-gradient(135deg,#fa709a,#fee140);}
+.g6 .ovi-icon{background:linear-gradient(135deg,#30cfd0,#330867);}
+.g7 .ovi-icon{background:linear-gradient(135deg,#667eea,#764ba2);}
+.g8 .ovi-icon{background:linear-gradient(135deg,#f953c6,#b91d73);}
+
+@keyframes gradientMove{
+  0%{background-position:0% 50%}
+  50%{background-position:100% 50%}
+  100%{background-position:0% 50%}
+}
+
+.ovi-service-card h3{
+  color:#fff;
+  font-size:19px;
+  margin-bottom:10px;
+}
+
+.ovi-service-card p{
+  color:#cfd6e3;
+  font-size:15px;
+  line-height:1.6;
+}
+
+@media(max-width:768px){
+  .ovi-title{font-size:34px;}
+}
+.g9  .ovi-icon{background:linear-gradient(135deg,#56ab2f,#a8e063);}
+.g10 .ovi-icon{background:linear-gradient(135deg,#2193b0,#6dd5ed);}
+.g11 .ovi-icon{background:linear-gradient(135deg,#ee0979,#ff6a00);}
+.g12 .ovi-icon{background:linear-gradient(135deg,#42275a,#734b6d);}
+.g13 .ovi-icon{background:linear-gradient(135deg,#00c6ff,#0072ff);}
+.g14 .ovi-icon{background:linear-gradient(135deg,#f12711,#f5af19);}
+.g15 .ovi-icon{background:linear-gradient(135deg,#8360c3,#2ebf91);}
+.g16 .ovi-icon{background:linear-gradient(135deg,#1d4350,#a43931);}
+
+</style>
+
+<script>
+const cards=document.querySelectorAll(".ovi-service-card");
+const io=new IntersectionObserver(e=>{
+  e.forEach(x=>{
+    if(x.isIntersecting){
+      x.target.style.opacity=1;
+      x.target.style.transform="translateY(0)";
+    }
+  });
+},{threshold:.15});
+
+cards.forEach(c=>{
+  c.style.opacity=0;
+  c.style.transform="translateY(40px)";
+  c.style.transition=".6s ease";
+  io.observe(c);
+});
+
+</script>
+

@@ -1,0 +1,137 @@
+<!-- ===== OFFICIAL SERVICES SECTION (ALL-IN-ONE) ===== -->
+<section class="ovi-services">
+  <style>
+    .ovi-services{
+      padding:80px 20px;
+      background:radial-gradient(circle at top,#0f172a,#020617);
+      color:#fff;
+      font-family:system-ui,sans-serif
+    }
+    .ovi-wrap{max-width:1300px;margin:auto}
+    .ovi-title{
+      text-align:center;
+      font-size:40px;
+      margin-bottom:60px;
+      background:linear-gradient(90deg,#38bdf8,#a78bfa);
+      -webkit-background-clip:text;
+      background-clip:text;
+      -webkit-text-fill-color:transparent
+    }
+    .ovi-grid{
+      display:grid;
+      grid-template-columns:repeat(4,1fr);
+      gap:22px
+    }
+    .ovi-card{
+      opacity:0;
+      transform:translateY(40px);
+      padding:30px 20px;
+      border-radius:18px;
+      background:linear-gradient(135deg,rgba(255,255,255,.08),rgba(255,255,255,.02));
+      border:1px solid rgba(255,255,255,.12);
+      backdrop-filter:blur(12px);
+      transition:.6s ease
+    }
+    .ovi-card.show{
+      opacity:1;
+      transform:translateY(0)
+    }
+    .ovi-card span{
+      display:inline-block;
+      font-size:36px;
+      margin-bottom:18px;
+      background:linear-gradient(45deg,#38bdf8,#a78bfa,#22c55e);
+      -webkit-background-clip:text;
+      background-clip:text;
+      -webkit-text-fill-color:transparent;
+      animation:oviRotate 6s linear infinite
+    }
+    .ovi-card:hover span{
+      filter:drop-shadow(0 0 18px rgba(56,189,248,.9))
+    }
+ /* Card Title Color Change */
+.ovi-card h3 {
+  font-size:16px;
+  font-weight:600;
+  line-height:1.4;
+  color: #fff; /* এখানে তোমার নতুন color code দিবে */
+}
+
+    @keyframes oviRotate{
+      from{transform:rotate(0deg)}
+      to{transform:rotate(360deg)}
+    }
+    @media(max-width:992px){
+      .ovi-grid{grid-template-columns:repeat(3,1fr)}
+    }
+    @media(max-width:600px){
+      .ovi-grid{grid-template-columns:repeat(2,1fr)}
+      .ovi-title{font-size:28px}
+    }
+  </style>
+
+  <div class="ovi-wrap">
+    
+
+    <div class="ovi-grid">
+      <!-- 50+ SERVICES -->
+      <div class="ovi-card"><span>💻</span><h3>Website Development</h3></div>
+      <div class="ovi-card"><span>🎨</span><h3>Graphic Design</h3></div>
+      <div class="ovi-card"><span>📱</span><h3>UI / UX Design</h3></div>
+      <div class="ovi-card"><span>⚙️</span><h3>WordPress Customization</h3></div>
+      <div class="ovi-card"><span>🛒</span><h3>WooCommerce Setup</h3></div>
+      <div class="ovi-card"><span>🚀</span><h3>SEO Optimization</h3></div>
+      <div class="ovi-card"><span>⚡</span><h3>Speed Optimization</h3></div>
+      <div class="ovi-card"><span>🔒</span><h3>Website Security</h3></div>
+      <div class="ovi-card"><span>📊</span><h3>Analytics Setup</h3></div>
+      <div class="ovi-card"><span>🧠</span><h3>Brand Strategy</h3></div>
+
+      <div class="ovi-card"><span>📧</span><h3>Email Template Design</h3></div>
+      <div class="ovi-card"><span>🧾</span><h3>Landing Page Design</h3></div>
+      <div class="ovi-card"><span>📦</span><h3>Product Page Design</h3></div>
+      <div class="ovi-card"><span>🖥️</span><h3>Dashboard UI</h3></div>
+      <div class="ovi-card"><span>📈</span><h3>Conversion Optimization</h3></div>
+      <div class="ovi-card"><span>🔄</span><h3>Website Redesign</h3></div>
+      <div class="ovi-card"><span>🌐</span><h3>Domain & Hosting Setup</h3></div>
+      <div class="ovi-card"><span>🛠️</span><h3>Bug Fixing</h3></div>
+      <div class="ovi-card"><span>📑</span><h3>Documentation Design</h3></div>
+      <div class="ovi-card"><span>📸</span><h3>Social Media Graphics</h3></div>
+
+      <div class="ovi-card"><span>🖌️</span><h3>Logo Design</h3></div>
+      <div class="ovi-card"><span>🎥</span><h3>Motion Graphics</h3></div>
+      <div class="ovi-card"><span>📱</span><h3>App UI Design</h3></div>
+      <div class="ovi-card"><span>🧪</span><h3>Website Testing</h3></div>
+      <div class="ovi-card"><span>📜</span><h3>Policy Page Setup</h3></div>
+      <div class="ovi-card"><span>🧭</span><h3>UX Research</h3></div>
+      <div class="ovi-card"><span>🗂️</span><h3>Admin Panel Setup</h3></div>
+      <div class="ovi-card"><span>📡</span><h3>API Integration</h3></div>
+      <div class="ovi-card"><span>🧮</span><h3>CRM Integration</h3></div>
+      <div class="ovi-card"><span>🪄</span><h3>Animation Effects</h3></div>
+
+      <div class="ovi-card"><span>🖨️</span><h3>Print Design</h3></div>
+      <div class="ovi-card"><span>🧵</span><h3>Brand Identity</h3></div>
+      <div class="ovi-card"><span>📍</span><h3>Google Map Integration</h3></div>
+      <div class="ovi-card"><span>🔔</span><h3>Notification System</h3></div>
+      <div class="ovi-card"><span>📤</span><h3>Backup & Restore</h3></div>
+      <div class="ovi-card"><span>🛎️</span><h3>Live Chat Setup</h3></div>
+      <div class="ovi-card"><span>🏢</span><h3>Corporate Website</h3></div>
+      <div class="ovi-card"><span>📰</span><h3>Blog Setup</h3></div>
+      <div class="ovi-card"><span>📚</span><h3>LMS Setup</h3></div>
+      <div class="ovi-card"><span>⭐</span><h3>Premium Support</h3></div>
+    </div>
+  </div>
+
+  <script>
+    const oviCards=document.querySelectorAll('.ovi-card');
+    const oviObserver=new IntersectionObserver(entries=>{
+      entries.forEach((entry,i)=>{
+        if(entry.isIntersecting){
+          setTimeout(()=>entry.target.classList.add('show'),i*80);
+          oviObserver.unobserve(entry.target);
+        }
+      });
+    },{threshold:.2});
+    oviCards.forEach(card=>oviObserver.observe(card));
+  </script>
+</section>
+<!-- ===== END ===== -->

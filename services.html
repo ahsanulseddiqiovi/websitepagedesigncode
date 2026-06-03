@@ -1,0 +1,124 @@
+<!-- Services Section -->
+<section class="services-section">
+  <div class="services-container">
+    <div class="service-card"><div class="service-icon">💻</div><h3>Web Development</h3><p>Responsive websites with clean code.</p></div>
+    <div class="service-card"><div class="service-icon">📱</div><h3>Mobile App Development</h3><p>iOS & Android apps with smooth UX.</p></div>
+    <div class="service-card"><div class="service-icon">🎨</div><h3>UI/UX Design</h3><p>Creative interfaces designed to delight users.</p></div>
+    <div class="service-card"><div class="service-icon">☁️</div><h3>Cloud Solutions</h3><p>Secure and scalable cloud systems.</p></div>
+    <div class="service-card"><div class="service-icon">🔒</div><h3>Cybersecurity</h3><p>Protect your data and systems with advanced measures.</p></div>
+    <div class="service-card"><div class="service-icon">📊</div><h3>Analytics & SEO</h3><p>Boost visibility and performance with data-driven strategies.</p></div>
+    <div class="service-card"><div class="service-icon">🤖</div><h3>AI Solutions</h3><p>Intelligent automation for smarter business operations.</p></div>
+    <div class="service-card"><div class="service-icon">🛒</div><h3>E-commerce Solutions</h3><p>Full-featured online stores with secure payment systems.</p></div>
+    <div class="service-card"><div class="service-icon">🌐</div><h3>Domain & Hosting</h3><p>Reliable domain registration and hosting services.</p></div>
+    <div class="service-card"><div class="service-icon">📝</div><h3>Content Writing</h3><p>High-quality, SEO-friendly content for websites and blogs.</p></div>
+    <div class="service-card"><div class="service-icon">🎥</div><h3>Video Production</h3><p>Professional videos for marketing, tutorials, and more.</p></div>
+    <div class="service-card"><div class="service-icon">📦</div><h3>Product Management</h3><p>End-to-end product lifecycle management solutions.</p></div>
+    <div class="service-card"><div class="service-icon">📧</div><h3>Email Marketing</h3><p>Automated campaigns to engage your audience effectively.</p></div>
+    <div class="service-card"><div class="service-icon">🖥️</div><h3>Software Development</h3><p>Custom software solutions tailored to business needs.</p></div>
+    <div class="service-card"><div class="service-icon">⚡</div><h3>Performance Optimization</h3><p>Enhance speed and efficiency of websites and apps.</p></div>
+    <div class="service-card"><div class="service-icon">📊</div><h3>Business Intelligence</h3><p>Turn data into actionable insights for growth.</p></div>
+    <div class="service-card"><div class="service-icon">🛡️</div><h3>IT Support</h3><p>Reliable technical support for business systems.</p></div>
+    <div class="service-card"><div class="service-icon">🌟</div><h3>Branding & Identity</h3><p>Create a strong brand presence with professional design.</p></div>
+    <div class="service-card"><div class="service-icon">📌</div><h3>Project Management</h3><p>Organize, track, and deliver projects efficiently.</p></div>
+    <div class="service-card"><div class="service-icon">🔧</div><h3>Maintenance & Updates</h3><p>Keep systems and websites up-to-date and secure.</p></div>
+    <div class="service-card"><div class="service-icon">💡</div><h3>Consulting</h3><p>Expert advice to optimize business strategy and tech use.</p></div>
+  </div>
+</section>
+
+<style>
+/* Section base with elegant dark background */
+.services-section {
+  padding: 10px 20px;
+  background:  #007fcf; /* dark, professional background */
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  color: #fff;
+}
+
+.services-title {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 50px;
+  color: #fff;
+}
+
+/* Services container */
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Glass effect professional card */
+.service-card {
+  position: relative;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  padding: 30px 20px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+  color: #fff;
+  transition: all 0.4s ease;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.6);
+  border-color: #00f2fe;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* Glow inner border effect */
+.service-card::before {
+  content: '';
+  position: absolute;
+  top: -2px; left: -2px; right: -2px; bottom: -2px;
+  border-radius: 22px;
+  background: linear-gradient(45deg, #00f2fe, #4facfe, #00f2fe);
+  z-index: -1;
+  filter: blur(10px);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.service-card:hover::before {
+  opacity: 1;
+}
+
+/* Card content */
+.service-icon {
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.service-card h3 {
+  font-size: 22px;
+  margin-bottom: 12px;
+  font-weight: 600;
+  color: #fff; /* white text */
+}
+
+.service-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #fff; /* white text */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .services-title {
+    font-size: 28px;
+  }
+  .service-card {
+    padding: 25px 15px;
+  }
+  .service-icon {
+    font-size: 40px;
+  }
+}
+</style>
